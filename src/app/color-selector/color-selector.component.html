@@ -1,0 +1,19 @@
+<div [class]="boxclass">
+    <select (change)="getcolor($event)">
+        <option *ngFor="let col of color" [value]="col.Id">
+            {{col.Name}}
+        </option>
+    </select>
+    
+</div>
+
+
+<button (click)= "sendData()">SendData</button>
+<br><br><br>
+<app-background-color [colorsselected] = "colorsel" (seeItem)= "itemFunction($event)" ></app-background-color>
+{{info}}
+<p>
+    <input id="usname" [(ngModel)]="username">
+</p>
+<button type="button" (click)="clickme()">Click</button>
+<h1>{{username1}}</h1>

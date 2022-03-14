@@ -1,0 +1,8 @@
+<div >
+
+    <p>Change the color of the text</p>
+    <div *ngIf="colorsselected" [ngClass] = "'class-'+colorsselected">
+    <p>{{color_change}}</p>
+</div>
+</div>
+<button (click)="sendItem()">Send Item</button>
